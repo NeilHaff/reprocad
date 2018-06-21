@@ -1,0 +1,185 @@
+.HeaderBox {
+    padding-top: 5px;
+    background-color: #01b0f0;
+    width: 100%;
+    padding-right: 5rem;
+    z-index: 1;
+}
+
+.mainnav{
+    width:100%;
+    height: 80px;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    z-index: 1;
+}
+
+.mainnav1{
+    width:100%;
+    height: 80px;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+.ScrollHeader{
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: #01b0f0 !important;
+    padding-top: 3px;
+    height: 60px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+.FooterBox{
+    background-color: #2d2e2f;
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+}
+h2{
+    color: #2d2e2f;
+    font-family: 'Nunito', sans-serif;
+}
+
+.removelinkdefault {
+    text-decoration: none;
+}
+
+.columns{
+    height: 150px;
+    flex-direction: row;
+    align-content: center;
+    display: flex;
+}
+
+.FooterBox h2{
+    color: white;
+}
+
+.FooterBox p{
+    color: white;
+    align-self: center;
+}
+
+.footcol {
+    margin: auto;
+}
+
+
+
+.ScrollHeader .logo{
+    background-color: #01b0f0;
+}
+
+.ScrollHeader h2{
+    color: white;
+    text-underline: none;
+}
+
+.col2 img{
+    max-height: 150px;
+    max-width: 150px;
+}
+
+.logo {
+    max-width: 250px;
+    height: 60%;
+    align-self: center;
+    padding-left: 10px;
+    padding-right: 4rem;
+    flex-grow: 2;
+}
+
+button {
+    margin-right: 1rem;
+    flex-grow: 1;
+    color: #f0f0f0;
+    border: transparent;
+}
+
+button:hover {
+    background-color: #01b0f0;
+}
+
+button {
+    margin-right: 1rem;
+    flex-grow: 1;
+    background-color: #f0f0f0;
+    border: transparent;
+}
+
+.DropDown button:hover {
+    background-color: #f0f0f0;
+}
+
+.DropDown button h2:hover{
+    color: #01b0f0;
+}
+
+.mainnav button h2:hover{
+    color: white;
+}
+
+.ScrollHeader button{
+    background-color: #01b0f0;;
+}
+
+.DropDown {
+    position: absolute;
+    width: fit-content;
+    height: 250px;
+    background-color: #01b0f0;
+    display: flex;
+    left: 40%;
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+.DropDown img{
+    align-self: center;
+}
+
+.DropDown button{
+    background-color: #f0f0f0;
+}
+
+.DropDown h2:hover{
+    color: #01b0f0;
+}
+
+.col1 {
+    max-width: 160px;
+    height: 100%;
+    padding-top: 15px;
+    flex-direction: column;
+    background-color: #f0f0f0;
+}
+
+.col2 {
+    min-width: 300px;
+    max-height: 500px;
+    height: 250px;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
+
+.line {
+    background-color: black;
+    width: 100%;
+    margin-top: 45px;
+    height: 5px;
+    bottom: 0;
+    position: static;
+}
+
+

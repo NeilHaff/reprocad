@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+.mainproduct{
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    justify-content: center;
+}
+
+.productdetails{
+    height: 250px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.salestext{
+    height: 400px;
+    background-image: url('/placeholder2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.salestext p{
+    justify-content: center;
+    width: 40%;
+    color: white;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+}
+
+
+

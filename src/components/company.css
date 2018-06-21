@@ -1,0 +1,42 @@
+.Company{
+    height: 400px;
+    flex-direction: row;
+    display: flex;
+    padding-top: 20px;
+}
+
+.textcompany{
+    width: 50%;
+    flex-direction: column;
+    height: 380px;
+    padding: 40px 30px 20px 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.textcompany h2{
+    padding-top: 0px;
+    margin-bottom: 0;
+    font-size: large;
+    color: #2d2e2f;
+ }
+
+.textcompany h1{
+    padding-bottom: 0px;
+    margin-top: 0;
+}
+
+.textcompany p{
+    line-height: 1.4;
+}
+
+.imageside{
+    max-width: 50%;
+    float: right;
+    height: 380px;
+    padding-left: 15%;
+}
+
+.Manager{
+    max-height: 400px;
+}

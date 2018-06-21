@@ -1,0 +1,47 @@
+.MachineBox{
+    width: 200px;
+    max-width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 15px 15px 10px;
+    background-image: url('../Images/placeholder2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+
+}
+
+.MachineBox img {
+    position: inherit;
+    width: 200px;
+    height: 200px;
+    align-self: auto;
+    overflow: hidden;
+}
+
+
+.trans{
+    left: 0;
+    top: 0;
+    position: inherit;
+    width: 280px;
+    height: 2300px;
+    background: rgba(255,255,255,0);
+    transition: all 2000ms ease;
+}
+
+.trans:hover{
+    background: rgba(255,255,255,0.4);
+}
+
+
+.MachineBox h2{
+    color: white;
+    align-self: center;
+ }
+
+.MachineBox h4{
+    color: white;
+    align-self: center;
+}
