@@ -4,15 +4,15 @@ import Routes from '../Routes/Routes';
 
 
 class Home extends React.Component {
-    render() {
-        return (
-            <div>
-                <h1>Home Page</h1>
-                <p>This is the home page.</p>
-            </div>
+  render() {
+    return (
+      <div>
+        <h1>Home Page</h1>
+        <p>This is the home page.</p>
+      </div>
 
-        );
-    }
+    );
+  }
 }
 
 

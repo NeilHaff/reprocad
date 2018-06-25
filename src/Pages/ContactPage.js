@@ -10,18 +10,18 @@ import './ProductPage.css';
 
 
 class ContactPage extends React.Component {
-    render() {
-        return (
-            <div>
-                <Header/>
-                <Company/>
-                <Contact/>
-                <Contact/>
-                <Footer/>
-            </div>
+  render() {
+    return (
+      <div>
+        <Header/>
+        <Company/>
+        <Contact/>
+        <Contact/>
+        <Footer/>
+      </div>
 
-        );
-    }
+    );
+  }
 }
 
 

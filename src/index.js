@@ -8,15 +8,15 @@ import ContactPage from "./Pages/ContactPage";
 import Machines from './components/Machines';
 
 ReactDOM.render((
-    <Router>
-        <div>
-            <Switch>
-                <Route path= '/ProductPage' exact component={ProductPage}/>
-                <Route path='/' exact component={App}/>
-                <Route path='/contact' exact component={ContactPage}/>
-               {Machines.map(machine => <Route path={machine.pageurl} exact component={<ProductPage Machine={machine}/>}/>)}
-            </Switch>
-        </div>
-    </Router>), document.getElementById('root'));
+  <Router>
+    <div>
+      <Switch>
+        <Route path= '/ProductPage' exact component={ProductPage}/>
+        <Route path='/' exact component={App}/>
+        <Route path='/contact' exact component={ContactPage}/>
+        {Machines.map(machine => <Route path={machine.pageurl} exact component={<ProductPage Machine={machine}/>}/>)}
+      </Switch>
+    </div>
+  </Router>), document.getElementById('root'));
 registerServiceWorker();
 
