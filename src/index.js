@@ -14,7 +14,12 @@ ReactDOM.render((
         <Route path= '/ProductPage' exact component={ProductPage}/>
         <Route path='/' exact component={App}/>
         <Route path='/contact' exact component={ContactPage}/>
-        {Machines.map(machine => <Route path={machine.pageurl} exact component={<ProductPage Machine={machine}/>}/>)}
+        {/*{Machines.map(machine => <Route path={machine.pageurl} exact component={<ProductPage Machine={machine}/>}/>)}*/}
+        {Machines.map((machine, i) =>
+          <Route key={i} path={machine.pageurl} exact render={props =>
+            <ProductPage Machine={machine} {...props}/>
+          } />
+        )}
       </Switch>
     </div>
   </Router>), document.getElementById('root'));

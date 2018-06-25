@@ -4,12 +4,13 @@ import './Machines.css';
 class MachineCard extends React.Component {
   render() {
     return (
-      <button className="MachineBox">
+      <div className="MachineBox">
+        <div className={'machinebox-bg'} style={{backgroundImage: `url("${this.props.thumb}")`}}/>
         <div className='trans'>
-          <h4>{this.props.Card.title}</h4>
-          <h4>{this.props.Card.Subtitle}</h4>
+          <h4 className={'machine-name'}>{this.props.Card.title}</h4>
+          <h4 className={'machine-subtitle'}>{this.props.Card.Subtitle}</h4>
         </div>
-      </button>
+      </div>
     );
 
   }

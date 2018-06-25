@@ -1,9 +1,9 @@
 import React from 'react';
 import './Header.css';
-import MachineCard from './MachineCard'
 import DropDown from "./Dropdown";
 import Machines from "./Machines";
 import {Link} from "react-router-dom";
+import reprocadLogo from '../Images/reprocad-logo.png';
 
 
 class Header extends React.Component {
@@ -14,8 +14,8 @@ class Header extends React.Component {
     this.closeMenu = this.closeMenu.bind(this);
   }
 
-  showMenu(event) {
-    this.setState({ showMenu: true, headerIsActive: true, }, () => {
+  showMenu() {
+    this.setState({ showMenu: true}, () => {
       document.addEventListener('click', this.closeMenu);
     });
   }
@@ -33,30 +33,30 @@ class Header extends React.Component {
       classes.push('ScrollHeader')
     }
 
+    if (this.props.active){
+      classes.push('active');
+    }
+
     return(
       <div className={classes.join(' ')}>
         <div className='mainnav1'>
-          <img className='logo' src='../reprocadlogo.png' alt='logo' />
+          <img className='logo' src={reprocadLogo} alt='logo' />
           <div className='logo'/>
           <button>
-            <Link to={'/'} class="removelinkdefault" >
+            <Link to={'/'} className={"removelinkdefault"}>
               <h2>Home</h2>
             </Link>
           </button>
-          <button onPointerOver={this.showMenu}>
+          <button onMouseEnter={this.showMenu}>
             <h2>Products</h2>
           </button>
           <button>
-            <Link to={'/contact'} class="removelinkdefault" >
+            <Link to={'/contact'} className={"removelinkdefault"}>
               <h2>Contact</h2>
             </Link>
           </button>
         </div>
-        <div>
-          {this.state.showMenu &&
-          <DropDown Machines={Machines}/>
-          }
-        </div>
+        {this.state.showMenu && <DropDown Machines={Machines}/>}
       </div>
     );
   }

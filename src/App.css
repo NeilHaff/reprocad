@@ -1,5 +1,54 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
+/* Global Defaults */
+
+body {
+  margin: 0
+}
+
+* {
+  position: relative;
+  box-sizing: border-box;
+  z-index: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+  border: none; }
+
+fieldset {
+  border: none; }
+
+a {
+  color: inherit; }
+a:hover {
+  text-decoration: none; }
+
+html {
+  font-size: 16px;
+  overflow-y: scroll;
+  min-height: 100%;
+  overflow-x: hidden;
+  max-width: 1550px;
+  margin: auto;
+  font-family: BentonSans, sans-serif;
+  font-weight: 400; }
+
+body {
+  min-height: 100%;
+  margin: 0; }
+
+button {
+  cursor: pointer; }
+
+/* App CSS */
+
+
 .Page{
   align-items: flex-start;
   flex-direction: column;
@@ -104,22 +153,16 @@ h1{
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  padding-bottom: 80px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 40px;
+  padding: 40px 50px 80px 50px;
   left:0;
 }
 
-
-
-.Products h2{
+.Products .products-title{
   width: 100%;
-  border-top: 20px;
-  border-bottom: 40px;
   text-align: center;
-  font-size: x-large;
+  font-size: 2em;
   color: #1a4f76;
+  margin: 20px 0;
 }
 
 .App-title {
@@ -138,3 +181,4 @@ h1{
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+

@@ -7,21 +7,22 @@ import Company from './components/company';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
+const SCROLL_THRESHOLD = 430;
+
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {  headerIsActive: false,  showMenu: false, };
+    this.state = {  headerIsActive: false,  showMenu: false};
     document.addEventListener('scroll', this.HandleScroll);
   }
 
   HandleScroll = () => {
     let Y = window.scrollY ;
-    if ( Y >= 350) {
+    if ( Y >= SCROLL_THRESHOLD) {
       this.setState({
         headerIsActive: true
       });
     } else  {
-      console.log("not active");
       this.setState({
         headerIsActive: false
       });
@@ -32,7 +33,6 @@ class App extends Component {
   render() {
     return (
       <div className='Page'>
-        {this.state.headerIsActive && <Header fixed />}
         <div className='glass'>
           <video className='video' autoPlay='autoplay' loop="loop" muted=""
                  data-reactid=".0.1.0.0">
@@ -49,12 +49,12 @@ class App extends Component {
         </div>
 
         <div className='Products'>
-          <h2>Our Range</h2>
-          {Machines.map(Card=> <MachineCard Card={Card} />)}
+          <h2 className={'products-title'}>Our Range</h2>
+          {Machines.map(Card=> <MachineCard Card={Card} thumb={Card.thumb} key={Card.id}/>)}
         </div>
-
         <Company />
         <Footer/>
+        {<Header fixed active={this.state.headerIsActive}/>}
       </div>
 
     );
