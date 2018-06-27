@@ -5,14 +5,17 @@ import Contact from "../components/contact";
 import Company from "../components/company";
 import './ProductPage.css';
 
+import officedemoimage from '../Images/officedemoimage.jpg';
+
+
+
 class ContactPage extends React.Component {
   render() {
     return (
       <div>
         <Header/>
-        <Company/>
-        <Contact/>
-        <Contact/>
+        <Company Image={officedemoimage}/>
+        <Contact />
         <Footer/>
       </div>
 

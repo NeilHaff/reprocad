@@ -10,9 +10,9 @@
   height: 100%;
   padding: 40px 30px 20px 30px;
   justify-content: center;
-  text-align: right;
   background-color: #f0f0f0;
   display: flex;
+  text-align: center;
 }
 
 .textcompany .headline {
@@ -35,10 +35,15 @@
 }
 
 .imageside{
+  padding-top: 50px;
   max-width: 50%;
-  float: right;
   height: 380px;
-  padding-left: 15%;
+  justify-content: center;
+  display:table-cell;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 auto;
+
 }
 
 .Manager{

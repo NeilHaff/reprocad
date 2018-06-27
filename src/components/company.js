@@ -1,6 +1,5 @@
 import React from 'react';
 import './company.css';
-import managerImage from '../Images/manager.jpg'
 
 class Company extends React.Component {
   render() {
@@ -14,7 +13,7 @@ class Company extends React.Component {
           </p>
         </div>
         <div className='imageside'>
-          <img className='Manager' src={managerImage} alt='reprocad customer'  />
+          <img className='Manager' src={this.props.Image} alt='reprocad customer'  />
         </div>
       </div>
     );

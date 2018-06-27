@@ -25,10 +25,10 @@ class DropDown extends React.Component {
         </div>
         <div className='col2'>
           {this.state.thumb && <img src={this.state.thumb} alt={'thumbnail'}/>}
-          <h2> {this.state.Subtitle}</h2>
+          <h4> {this.state.Subtitle}</h4>
           <button className='DropDownButton' >
             <Link to={this.state.Pageurl}>
-              Click here
+             <h2> View Product Details</h2>
             </Link>
           </button>
         </div>
