@@ -7,6 +7,8 @@ import Company from './components/company';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
+import manager from './Images/manager.jpg';
+
 const SCROLL_THRESHOLD = 430;
 
 class App extends Component {
@@ -45,14 +47,14 @@ class App extends Component {
           <h1>Bringing The Best Printing Technology To Market</h1>
           {/*<p>Located near Cambridge, England, Reprocad Ltd has been involved in digital print technology for 15 years. Working and consulting with some of the key players, worldwide,  we have been involved in bringing to market innovative solutions in hardware, software and consumables for printing applications in areas as diverse as CAD, labelling, graphics, production, architecture and packaging.*/}
           {/*</p>*/}
-          <p> With our partners we provide digital printing solutions that give our customers real market advantage.</p>
+          <p> With our partners we provide digital printing solutions that give our customers real market advantage. View our range below.</p>
         </div>
 
         <div className='Products'>
           <h2 className={'products-title'}>Our Range</h2>
           {Machines.map(Card=> <MachineCard Card={Card} thumb={Card.thumb} key={Card.id}/>)}
         </div>
-        <Company />
+        <Company Image={manager} />
         <Footer/>
         {<Header fixed active={this.state.headerIsActive}/>}
       </div>

@@ -14,6 +14,7 @@ class ProductPage extends React.Component {
         <Header/>
         <div className='mainproduct'>
           <h1>{this.props.Machine.title}</h1>
+            <img className='ProductImage' src={this.props.Machine.MainImage} alt='product image' />
 
         </div>
         <div className='productdetails'>
