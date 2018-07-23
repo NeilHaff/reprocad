@@ -40,8 +40,9 @@ class Header extends React.Component {
     return(
       <div className={classes.join(' ')}>
         <div className='mainnav1'>
-          <img className='logo' src={reprocadLogo} alt='logo' />
-          <div className='logo'/>
+            <Link to={'/'} className={"removelinkdefault"}>
+                <img className='logo' src={reprocadLogo} alt='logo' />
+            </Link>
           <button>
             <Link to={'/'} className={"removelinkdefault"}>
               <h2>Home</h2>

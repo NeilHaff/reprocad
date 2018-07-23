@@ -139,6 +139,12 @@ h1{
   line-height: 1.4;
 }
 
+
+.StatementText h1{
+  margin-left: 10%;
+  width: 80%;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;

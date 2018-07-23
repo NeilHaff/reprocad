@@ -15,6 +15,7 @@ class ContactPage extends React.Component {
       <div>
         <Header/>
         <Company Image={officedemoimage}/>
+        <div className='Gap'/>
         <Contact />
         <Footer/>
       </div>

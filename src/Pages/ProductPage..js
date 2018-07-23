@@ -19,9 +19,14 @@ class ProductPage extends React.Component {
         </div>
         <div className='productdetails'>
           <h1>Product Details</h1>
+            <p> {this.props.Machine.MainDescription} </p>
         </div>
+          <div className='productdetails2'>
+              <h1>{this.props.Machine.Title2} </h1>
+              <p> {this.props.Machine.Text2} </p>
+          </div>
         <div className='salestext'>
-          <p>A short summary, maybe even a quote from a happy client. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+          <p>{this.props.Machine.Subtitle}</p>
         </div>
         <Contact/>
         <Footer/>

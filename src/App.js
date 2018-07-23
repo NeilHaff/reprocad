@@ -41,10 +41,10 @@ class App extends Component {
             <source type="video/mp4" data-reactid=".0.1.0.0.0" src='./printmaker.mp4'/>
           </video>
         </div>
-        <h3 className='intro'>The Worlds Leading Print Technology</h3>
+        <h3 className='intro'>We  bring  exceptional  technologies  to  market  in  the  inkjet  printing  field. </h3>
         <Header/>
         <div className='StatementText'>
-          <h1>Bringing The Best Printing Technology To Market</h1>
+          <h1> With  our  global  partners  we  supply  leading  edge  printers,  next  generation  ink  technology  and  market  driven  consultancy.</h1>
           {/*<p>Located near Cambridge, England, Reprocad Ltd has been involved in digital print technology for 15 years. Working and consulting with some of the key players, worldwide,  we have been involved in bringing to market innovative solutions in hardware, software and consumables for printing applications in areas as diverse as CAD, labelling, graphics, production, architecture and packaging.*/}
           {/*</p>*/}
           <p> With our partners we provide digital printing solutions that give our customers real market advantage. View our range below.</p>

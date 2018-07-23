@@ -1,5 +1,5 @@
 .HeaderBox {
-  padding-top: 2px;
+  /*padding-top: 2px;*/
   background-color: #1a4f76;
   width: 100%;
   padding-right: 5rem;
@@ -27,7 +27,6 @@
 }
 
 
-
 .ScrollHeader{
   position: fixed;
   top: -100px;
@@ -35,7 +34,7 @@
   background-color: #1a4f76 !important;
   padding-top: 0;
   height: 60px;
-  overflow: hidden;
+  /*overflow: hidden;*/
   z-index: 1;
   transition: 0.3s;
   opacity: 0.2;
@@ -52,6 +51,7 @@
   height: 200px;
   bottom: 0;
 }
+
 h2{
   color: #2d2e2f;
   font-family: 'Nunito', sans-serif;
@@ -85,7 +85,8 @@ h2{
 
 .ScrollHeader .logo{
   background-color: #1a4f76;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
+
 }
 
 .ScrollHeader h2{
@@ -93,9 +94,11 @@ h2{
   text-underline: none;
 }
 
+
 .col2 img{
   max-height: 200px;
   max-width: 250px;
+  margin-left: 50px;
 }
 
 .logo {
@@ -104,26 +107,37 @@ h2{
   align-self: center;
   padding-left: 10px;
   padding-right: 4rem;
+  padding-top: 10px;
   flex-grow: 2;
 }
 
 .mainnav1 button {
   margin-right: 1rem;
   flex-grow: 1;
-  color: #f0f0f0;
-  border: 3px;
-  border-color: transparent;
+  /*color: #f0f0f0;*/
+  border: 2px solid transparent;
+  /*border-color: transparent;*/
   background-color: #f0f0f0;
 }
 
 .mainnav1 button:hover {
-  border: 2px solid #01b0f0;
+  /*border: 2px solid #01b0f0;*/
+  border-color: #01b0f0;
+
+}
+
+.DropDownButton{
+  padding-top: 0;
+  background-color: transparent;
+}
+
+.DropDown button{
+  background-color: #1a4f76;
 }
 
 
-
 .DropDown button:hover {
-  background-color: #f0f0f0;
+  background-color: transparent;
 }
 
 .DropDown button h2:hover{
@@ -141,9 +155,10 @@ h2{
 }
 
 .ScrollHeader button:hover{
-  border: 4px;
+  /*border: 4px;*/
   border-color: #01b0f0;
 }
+
 
 .DropDown {
   position: absolute;
@@ -151,46 +166,51 @@ h2{
   height: 300px;
   background-color: #f0f0f0;
   display: flex;
-  left: 40%;
+  left: 30%;
   overflow: hidden;
-  top: 60px;
-
+  top: 80px;
 }
+
+
 
 .DropDown img{
   align-self: center;
 }
 
 .DropDown button{
-  background-color: #f0f0f0;
+  /*background-color: #button;*/
 }
 
 .DropDown h2:hover{
   color: #01b0f0;
 }
 
-.DropDown h4{
-  padding-top: 15px;
+.DropDown p{
+  width:80%;
+  margin-left: 10%;
+  max-height: 50px;
 }
 
 .col1 {
-  max-width: 200px;
+  max-width: 300px;
   height: 100%;
   flex-direction: column;
-  background-color: #f0f0f0;
+  background-color: #1a4f76;
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 20px;
+
 }
 
 .col1 h2{
   margin-top: 20px;
+  color: white;
 }
 
 .col2 {
   padding-top: 30px;
-  width: 350px;
+  width: 400px;
   max-height: 500px;
   height: 250px;
   flex-direction: column;

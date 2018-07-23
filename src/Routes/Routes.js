@@ -7,19 +7,19 @@ import App from '../App';
 import Machines from '../components/Machines';
 
 
-
-const Routes = () => (
-  <Router>
-    <App />
-    <Switch>
-      <Route path= '/ProductPage' exact component={ProductPage}/>
-      <Route path='/' exact component={Home}/>
-      <Route path='/contact' exact component={ContactPage}/>
-      {/*{Machines.map(Machine => <Route path={this.Machine.pageurl} exact component={<ProductPage {this.Machine.title}/>}/>*/}
-      {/*)}*/}
-    </Switch>
-  </Router>
-);
-
-
-export default Routes;
+//
+// const Routes = () => (
+//   <Router>
+//     <App />
+//     <Switch>
+//       <Route path= '/ProductPage' exact component={ProductPage}/>
+//       <Route path='/' exact component={Home}/>
+//       <Route path='/contact' exact component={ContactPage}/>
+//       {/*{Machines.map(Machine => <Route path={this.Machine.pageurl} exact component={<ProductPage {this.Machine.title}/>}/>*/}
+//       {/*)}*/}
+//     </Switch>
+//   </Router>
+// );
+//
+//
+// export default Routes;
