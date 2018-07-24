@@ -3,14 +3,14 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "../Pages/HomePage";
 import ProductPage from '../Pages/ProductPage.';
 import ContactPage from '../Pages/ContactPage';
-import App from '../App';
+import Home from '../Home';
 import Machines from '../components/Machines';
 
 
 //
 // const Routes = () => (
 //   <Router>
-//     <App />
+//     <Home />
 //     <Switch>
 //       <Route path= '/ProductPage' exact component={ProductPage}/>
 //       <Route path='/' exact component={Home}/>
