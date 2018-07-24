@@ -8,7 +8,7 @@ import React, {Component} from "react";
 class App extends Component {
 
   componentWillMount() {
-    this.unlisten = this.props.history.listen((location, action) => {
+    this.unlisten = this.props.history.listen(() => {
       window.scrollTo(0, 0)
     });
   }
