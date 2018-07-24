@@ -9,23 +9,7 @@ import reprocadLogo from '../Images/reprocad-logo.png';
 class Header extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {  showMenu: false, };
-    this.showMenu = this.showMenu.bind(this);
-    this.closeMenu = this.closeMenu.bind(this);
   }
-
-  showMenu() {
-    this.setState({ showMenu: true}, () => {
-      document.addEventListener('click', this.closeMenu);
-    });
-  }
-
-  closeMenu() {
-    this.setState({ showMenu: false }, () => {
-      document.removeEventListener('click', this.closeMenu);
-    });
-  }
-
 
   render(){
     let classes = ['mainnav'];
@@ -48,7 +32,7 @@ class Header extends React.Component {
               <h2>Home</h2>
             </Link>
           </button>
-          <button onMouseEnter={this.showMenu}>
+          <button onMouseEnter={this.props.showMenu}>
             <h2>Products</h2>
           </button>
           <button>
@@ -57,7 +41,7 @@ class Header extends React.Component {
             </Link>
           </button>
         </div>
-        {this.state.showMenu && <DropDown Machines={Machines}/>}
+        {this.props.menuIsVisible && <DropDown Machines={Machines}/>}
       </div>
     );
   }

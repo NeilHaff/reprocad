@@ -14,8 +14,20 @@ const SCROLL_THRESHOLD = 430;
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {  headerIsActive: false,  showMenu: false};
+    this.state = {
+      headerIsActive: false,
+      showMenu: false
+    };
+    this.showMenu = this.showMenu.bind(this);
+    this.closeMenu = this.closeMenu.bind(this);
+  }
+
+  componentDidMount(){
     document.addEventListener('scroll', this.HandleScroll);
+  }
+
+  componentWillUnmount(){
+    document.removeEventListener('scroll', this.HandleScroll);
   }
 
   HandleScroll = () => {
@@ -31,6 +43,14 @@ class App extends Component {
     }
   };
 
+  showMenu() {
+    this.setState({ showMenu: true});
+  }
+
+  closeMenu() {
+    this.setState({ showMenu: false });
+  }
+
 
   render() {
     return (
@@ -42,7 +62,7 @@ class App extends Component {
           </video>
         </div>
         <h3 className='intro'>We  bring  exceptional  technologies  to  market  in  the  inkjet  printing  field. </h3>
-        <Header/>
+        <Header menuIsVisible={this.state.showMenu} showMenu={this.showMenu} closeMenu={this.closeMenu} />
         <div className='StatementText'>
           <h1> With  our  global  partners  we  supply  leading  edge  printers,  next  generation  ink  technology  and  market  driven  consultancy.</h1>
           {/*<p>Located near Cambridge, England, Reprocad Ltd has been involved in digital print technology for 15 years. Working and consulting with some of the key players, worldwide,  we have been involved in bringing to market innovative solutions in hardware, software and consumables for printing applications in areas as diverse as CAD, labelling, graphics, production, architecture and packaging.*/}
