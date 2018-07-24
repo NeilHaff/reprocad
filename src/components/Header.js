@@ -33,7 +33,7 @@ class Header extends React.Component {
     }
 
     return(
-      <div className={classes.join(' ')}>
+      <div className={classes.join(' ')} onMouseLeave={() => this.setState({showMenu: false})}>
         <div className='mainnav1'>
             <Link to={'/'} className={"removelinkdefault"}>
                 <img className='logo' src={reprocadLogo} alt='logo' />
@@ -52,7 +52,7 @@ class Header extends React.Component {
             </Link>
           </button>
         </div>
-        {this.state.showMenu && <DropDown Machines={Machines}/>}
+        {this.state.showMenu && <DropDown Machines={Machines} fixed={this.props.active}/>}
       </div>
     );
   }

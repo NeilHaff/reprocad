@@ -10,7 +10,7 @@ class DropDown extends React.Component {
 
   render () {
     return (
-      <div className='DropDown'>
+      <div className='DropDown' style={{top: this.props.fixed ? 60 : 80}}>
         <div className='col1'>
           {this.props.Machines.map( (Machine, i) => {
             return(
