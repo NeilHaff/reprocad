@@ -83,7 +83,8 @@ const Machines = [
       'Small enough to inkjet – digital security\n' +
       'Long fluorescence life expectancy – time is a security feature\n' +
       'All colours possible – including spot and bespoke brand colours',
-    MainImage: ('/Machines/Kornit.png'),
+      PDF:('/IQDEMYQD.pdf'),
+    MainImage: ('/Machines/quantamdot.png'),
     thumb: ('/placeholder2.jpg'),
   },
 
@@ -116,7 +117,7 @@ const Machines = [
         'Please contact us for a confidential discussion',
         Title2: '' ,
         Text2: '',
-        MainImage: ('/Machines/Kornit.png'),
+        MainImage: ('/Machines/AluminimumPrint.jpg'),
         thumb: ('/placeholder2.jpg'),
     },
 

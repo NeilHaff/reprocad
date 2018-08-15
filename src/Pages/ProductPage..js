@@ -4,11 +4,25 @@ import Footer from "../components/Footer";
 import Contact from "../components/contact";
 import './ProductPage.css';
 
+import { Document, Page } from 'react-pdf';
+
 
 
 
 class ProductPage extends React.Component {
+    state = {
+        numPages: null,
+        pageNumber: 1,
+    }
+
+    onDocumentLoad = ({ numPages }) => {
+        this.setState({ numPages });
+    }
+
+
   render() {
+      const { pageNumber, numPages } = this.state;
+
     return (
       <div>
         <Header/>
@@ -20,6 +34,20 @@ class ProductPage extends React.Component {
         <div className='productdetails'>
           <h1>Product Details</h1>
             <p> {this.props.Machine.MainDescription} </p>
+
+            <div>
+                <Document
+                    file={this.props.Machine.PDF}
+                    onLoadSuccess={this.onDocumentLoad}
+                    onLoadError={'No file'}
+                    // onItemClick=({pageNumber}+1)
+                >
+                    <Page pageNumber={pageNumber} />
+                </Document>
+                <p>Page {pageNumber} of {numPages}</p>
+            </div>
+
+
         </div>
           <div className='productdetails2'>
               <h1>{this.props.Machine.Title2} </h1>

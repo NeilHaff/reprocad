@@ -8,8 +8,8 @@ class Contact extends React.Component {
 
         <div className='contactcall'>
           <h1>We're available to help with enquiries</h1>
-          <h2>Phone 01787 211281</h2>
-          <h2>Email 000000000000</h2>
+          <h2>Phone 07962 156868</h2>
+          <h2>Email info@reprocad.co.uk</h2>
         </div>
 
     );

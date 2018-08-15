@@ -32,7 +32,7 @@ class Footer extends React.Component {
 
           </div>
           <div className='footcol'>
-            <h2>01787 211281 - We're available </h2>
+            <h2>07962 156868 - We're available </h2>
               <h2>to help with any questions.</h2>
           </div>
         </div>
