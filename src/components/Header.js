@@ -9,7 +9,18 @@ import reprocadLogo from '../Images/reprocad-logo.png';
 class Header extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      showMenu: false
+    }
   }
+
+  showMenu = () => {
+    this.setState({ showMenu: true});
+  };
+
+  closeMenu = () => {
+    this.setState({ showMenu: false });
+  };
 
   render(){
     let classes = ['mainnav'];
@@ -22,7 +33,7 @@ class Header extends React.Component {
     }
 
     return(
-      <div className={classes.join(' ')}>
+      <div className={classes.join(' ')} onMouseLeave={() => this.setState({showMenu: false})}>
         <div className='mainnav1'>
             <Link to={'/'} className={"removelinkdefault"}>
                 <img className='logo' src={reprocadLogo} alt='logo' />
@@ -32,7 +43,7 @@ class Header extends React.Component {
               <h2>Home</h2>
             </Link>
           </button>
-          <button onMouseEnter={this.props.showMenu}>
+          <button onMouseEnter={this.showMenu}>
             <h2>Products</h2>
           </button>
           <button>
@@ -41,7 +52,7 @@ class Header extends React.Component {
             </Link>
           </button>
         </div>
-        {this.props.menuIsVisible && <DropDown Machines={Machines}/>}
+        {this.state.showMenu && <DropDown Machines={Machines} fixed={this.props.active}/>}
       </div>
     );
   }

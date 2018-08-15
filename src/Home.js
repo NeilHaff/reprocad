@@ -18,8 +18,6 @@ class Home extends Component {
       headerIsActive: false,
       showMenu: false
     };
-    this.showMenu = this.showMenu.bind(this);
-    this.closeMenu = this.closeMenu.bind(this);
   }
 
   componentDidMount(){
@@ -43,13 +41,7 @@ class Home extends Component {
     }
   };
 
-  showMenu() {
-    this.setState({ showMenu: true});
-  }
 
-  closeMenu() {
-    this.setState({ showMenu: false });
-  }
 
 
   render() {
@@ -62,7 +54,7 @@ class Home extends Component {
           </video>
         </div>
         <h3 className='intro'>We  bring  exceptional  technologies  to  market  in  the  inkjet  printing  field. </h3>
-        <Header menuIsVisible={this.state.showMenu} showMenu={this.showMenu} closeMenu={this.closeMenu} />
+        <Header />
         <div className='StatementText'>
           <h1> With  our  global  partners  we  supply  leading  edge  printers,  next  generation  ink  technology  and  market  driven  consultancy.</h1>
           {/*<p>Located near Cambridge, England, Reprocad Ltd has been involved in digital print technology for 15 years. Working and consulting with some of the key players, worldwide,  we have been involved in bringing to market innovative solutions in hardware, software and consumables for printing applications in areas as diverse as CAD, labelling, graphics, production, architecture and packaging.*/}
